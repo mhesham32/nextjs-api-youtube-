@@ -21,12 +21,14 @@ export default function Home() {
   };
 
   const validateStark = (e) => {
+    setLoading(true);
     e.preventDefault();
     fetch("api/validateStark", {
       method: "POST",
       body: JSON.stringify({ character: value }),
     })
       .then((res) => {
+        setLoading(false);
         if (res.ok) {
           setIsStark("Yes");
         } else {
@@ -34,6 +36,7 @@ export default function Home() {
         }
       })
       .catch(() => {
+        setLoading(false);
         setIsStark("No");
       });
   };
