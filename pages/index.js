@@ -80,7 +80,7 @@ export default function Home() {
 
         span {
           color: #bada55;
-          font-size: 14px;
+          font-size: 48px;
         }
 
         .yes {
@@ -95,6 +95,21 @@ export default function Home() {
           font-size: 48px;
           font-weight: 700;
           text-align: center;
+        }
+      `}</style>
+
+      <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
+        }
+
+        * {
+          box-sizing: border-box;
         }
       `}</style>
     </div>
